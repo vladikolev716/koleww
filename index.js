@@ -16,7 +16,7 @@ bot.on("warn", console.warn);
 bot.on("error", console.error);
 bot.on("ready", () =>{
   console.log(`[READY] ${bot.user.tag} has been successfully booted up!`)
-  bot.user.setActivity("your Server, {type: "WATCHING"})
+  bot.user.setActivity("your Server", {type: "WATCHING"})
 });
 bot.on("shardDisconnect", (event, id) =>
   console.log(
